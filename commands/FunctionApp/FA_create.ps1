@@ -7,27 +7,14 @@
 "Function App configuration :"
 
 $Global:FAName = "alexeifa"
-"Function App name : "  + $FAName
-
 # python node
 $Global:FARuntime = "python"
-"Runtime : "  + $FARuntime
-
 # Linux Windows
 $Global:FAOSType = "Linux"
-"OS Type : "  + $FAOSType
-
 $Global:FAConsumptionPlanLocation = "eastus"
-"Consumption plan location : "  + $FAConsumptionPlanLocation
-
 $Global:FAFunctionVersion = 3
-"Function version : "  + $FAFunctionVersion
-
 $Global:FAKeyName = "alexeifakey"
-"Key name : "  + $FAKeyName
-
 $Global:FAKeyType = "functionKeys"
-"Key type : "  + $FAKeyType
 
 
 ################################################################
@@ -52,8 +39,8 @@ az functionapp create `
 az functionapp config appsettings set `
     --name $FAName `
     --resource-group $RGName `
-    --setting MyDbConnection=$CDBConnectionStrings
-    # --settings "AzureWebJobsStorage=$CDBConnectionStrings"
+    --setting CDBDbConnectionString=$CDBConnectionStrings SBConnectionString=$SBConnectionString
+    
     
 
 
@@ -70,11 +57,7 @@ if($CDBKeys){
 }
 
 
-#######################################################################
-# Next step :
 
-# $script = "commands\WebApp\WebApp_create.ps1"
-# .$script
 
 
 

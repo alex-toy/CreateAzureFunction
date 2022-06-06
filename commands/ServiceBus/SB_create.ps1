@@ -7,10 +7,7 @@
 "Service Bus configuration :"
 
 $Global:SBName = "alexeisb"
-"Service Bus Name  : "  + $SBName
-
 $Global:SBNamespaceName = "alexeinssb"
-"Service Bus Namespace  : "  + $SBNamespaceName
 
 
 ################################################################
@@ -58,8 +55,10 @@ az servicebus queue create `
 ################################################################
 "GET THE CONNECTION STRINGS :"
 
-$Global:ConnectionString = az servicebus namespace authorization-rule keys list `
+$Global:SBConnectionString = az servicebus namespace authorization-rule keys list `
     --resource-group $RGName `
     --namespace-name $SBNamespaceName `
     --name RootManageSharedAccessKey `
     --query primaryConnectionString 
+
+

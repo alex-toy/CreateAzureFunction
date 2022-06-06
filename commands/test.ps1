@@ -1,16 +1,5 @@
-
-
-
-az webapp webjob continuous start `
+az cosmosdb mongodb collection create `
     --resource-group $RGName `
-    --webjob-name alexeiwj `
-    --name $WAName
-    # [--ids]
-    # [--slot]
-
-az webapp webjob triggered run `
-    --resource-group $RGName `
-    --webjob-name alexeiwjtest1 `
-    --name $WAName
-    [--ids]
-    [--slot]
+    --account-name $CDBDatabaseAccount `
+    --database-name $CDBName `
+    --name contacts 

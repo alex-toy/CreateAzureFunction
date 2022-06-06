@@ -1,0 +1,11 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=flaskstorageaccount;AccountKey=NZrSgJYak8+M99ZjAkjwf1nSHiUrumvGFfrkmMWtpP/dwJadnZTc+gPAAoWngLadaX7oy854VFqv+AStt+kfUg==",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "FUNCTIONS_EXTENSION_VERSION": "~3",
+    "MyDbConnection": "mongodb://alexeidatabaseaccount:9ttAVA8orLaIuWrQm30Uttcw439EMRTNxFvefMoBjR5AGYj8Gs3pZQX9fTBpwsdnA7kDZv5smH6c071yWEkYNg==@alexeidatabaseaccount.mongo.cosmos.azure.com:10255/?ssl=true",
+    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=flaskstorageaccount;AccountKey=NZrSgJYak8+M99ZjAkjwf1nSHiUrumvGFfrkmMWtpP/dwJadnZTc+gPAAoWngLadaX7oy854VFqv+AStt+kfUg==",
+    "WEBSITE_CONTENTSHARE":"alexeifaa8a020ee9086"
+  }
+}
